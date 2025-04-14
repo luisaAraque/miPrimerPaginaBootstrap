@@ -8,6 +8,20 @@
   </head>
   <body class="btn-light">
 
+    <!-- INICIO BODY Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="idOffcanvas">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Redes sociales</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p><a href="https://www.facebook.com/adidas/?locale=es_LA" target="_blank"> Facebook</a></p>
+        <p><a href="https://www.instagram.com/adidasco/?hl=es-la" target="_blank"> Instagram</a></p>
+        <p><a href="https://x.com/unicesaroficial?lang=es" target="_blank"> X</a></p>
+        <button class="btn btn-secondary" type="button">A Button</button>
+      </div>
+    </div>  
+    <!-- FIN BODY OFFCANVAS -->
     <!-- === INICIO: Carousel === -->
     <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
@@ -49,6 +63,16 @@
       <p>The following example shows how to create a basic carousel with indicators and controls.</p>
     </div>
     <!-- === FIN: Carousel === -->
+
+    <!--INICIO BOTON OFFCANVAS -->
+    <div class="container-fluid mt-3">
+      <h3>Offcanvas Sidebar</h3>
+      <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+      <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#idOffcanvas">
+        Open Offcanvas Sidebar
+      </button>
+    </div>
+    <!-- FIN BOTON OFFCANVAS -->
 
     <!-- === INICIO: Tarjeta con Modal === -->
     <div class="container mt-5">
@@ -140,6 +164,83 @@
       </div>
     </div>
     <!-- === FIN: Botón PDF + Modal PDF === -->
+
+<!-- incio acordeonsito tecnicamente collapse -->
+
+<div class="container mt-3">
+  <h2>Accordion Example</h2>
+  <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio colpase 4 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapsefour">
+          Collapsible Group Item #4
+        </a>
+      </div>
+      <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <!-- inicio colpase 5 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapsefive">
+          Collapsible Group Item #5
+        </a>
+      </div>
+      <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          
+          <img src="img/mujer.png" alt="" style="width: 30%;">
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- finaliza collapse  -->
 
     <!-- === INICIO: Contenedor Principal === -->
     <div class="container">
